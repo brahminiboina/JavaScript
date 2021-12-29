@@ -1,0 +1,43 @@
+<html>	
+	<head>
+		<title>
+			Pop up window
+		</title>
+		<script>
+		function show(mylink, windowname){
+		//window.prompt("sometext","defaultText");
+			if (! window.focus)return true; 
+			var href; 
+			if (typeof(mylink) == 'string') href=mylink;
+			else href=mylink.href;
+			window.open(href, windowname, 'width=400,height=200,scrollbars=yes'); 
+			return false;
+		}
+		</script>
+		<style>
+		#show{
+			
+				background-color : light blue;
+				padding: 10px 20px;
+				text-align: center;
+				border-radius: 5px;
+				
+			}
+		#show:hover{
+			
+				background-color:LightSteelBlue;
+				cursor: pointer;
+				color: black;
+				text-align: center;				
+				font-size: 15px;
+				
+			}
+		
+		</style>
+	</head>
+	<body style = "text-align:center">
+	<A HREF="">
+		<input id="show" type  = "button" value = "show" onclick = "show(this, 'notes')"></input>
+		</a>
+	<body>
+	
