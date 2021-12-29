@@ -1,2 +1,2 @@
 # JavaScript
-stuff like JavaScriptAjax, Jquery, json examples
+stuff like JavaScript, Ajax, Jquery, json examples
