@@ -1,0 +1,34 @@
+{
+  "a": "a_value",
+  "b_json": {
+    "b": "b_value",
+    "c_arr": [
+      {
+        "c1": "c1_value"
+      },
+      {
+        "c2": "c2_value"
+      }
+    ]
+  }
+}
+
+Fetching data from json object:
+--------------------------------
+
+String a = parentJSON.getString("a"); // a_value
+
+JSONObject b_json = parentJSON.getJSONObject("b_json");
+
+String b = b_json.getString("b") //b_value
+
+JSONArray cArr = b_json.getJSONArray("c_arr");
+
+JSONObject c2Obj = cArr.getJSONObject(1);
+
+String c2 = c2Obj.getString("c2");
+
+* ternary operator in json:
+--------------------------
+jsonObject.has("")?jsonObject.getString(""):""
+
